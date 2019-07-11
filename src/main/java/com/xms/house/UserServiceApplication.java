@@ -10,6 +10,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 //@EnableEurekaClient
 @EnableDiscoveryClient//健康检查已经内置eurekaClient
+//@RibbonClient(name="user",configuration=NewRuleConfig.class)//使用ribbo自动注解 指定为user的微服务 策略为NewRuleConfig的文件
 public class UserServiceApplication {
 
 	public static void main(String[] args) {
