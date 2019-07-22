@@ -19,6 +19,20 @@
     id, name, phone, email, aboutme, passwd, avatar, type, create_time, enable, agency_id
   </sql>
   
+    <sql id="userField">
+      id,
+      name,
+      phone,
+      email,
+      aboutme,
+      passwd,
+      avatar,
+      type,
+      create_time,
+      enable,
+      agency_id
+   </sql>
+   
   <select id="select" resultType="com.xms.house.model.User">
       select <include refid="Base_Column_List"/>
       from   user
@@ -51,6 +65,18 @@
 	  		ORDER BY CREATE_DATE DESC  -->
 	 </select>
 	 
+	  <select id="selectById" resultType="com.xms.house.model.User">
+      select <include refid="userField"/>
+      from   user
+      where  id = #{id}
+    </select>
+    
+	 <select id="selectByEmail" resultType="com.xms.house.model.User">
+      select <include refid="Base_Column_List"/>
+      from   user
+      where  email = #{email}
+    </select>
+    
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

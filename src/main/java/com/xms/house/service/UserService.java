@@ -135,6 +135,7 @@ public class UserService {
     List<User> list =  getUserByQuery(user);
     if (!list.isEmpty()) {
        User retUser = list.get(0);
+       //
        onLogin(retUser);
        return retUser;
     }

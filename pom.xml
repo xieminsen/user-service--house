@@ -48,19 +48,19 @@
 		</dependency> 
 		
 		<!-- 服务熔断器 -->
-	<!-- 	<dependency>
+	 	<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-		</dependency> -->
+		</dependency> 
 		<!-- 分布式追踪 -->
-	   <!-- <dependency>
+	    <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency> -->
+		</dependency> 
 		<!-- 在分布式环境下发送、接收、存储和可视化跟踪的机制  -->
 		<dependency>
 	      <groupId>org.springframework.cloud</groupId>
@@ -180,7 +180,7 @@
          </dependency> 
          
          <!-- 注解生成接口文档,包括接口名、请求方法、参数、返回信息 -->
-      <!--  <dependency>
+        <dependency>
         <groupId>io.springfox</groupId>
          <artifactId>springfox-swagger2</artifactId>
          <version>${springfox.version}</version>
@@ -191,7 +191,7 @@
          <artifactId>springfox-swagger-ui</artifactId>
          <version>${springfox.version}</version>
        </dependency>
-           -->
+           
      
       <dependency>
       	<groupId>org.springframework.boot</groupId>
